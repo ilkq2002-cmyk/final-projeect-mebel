@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.homeh1{
+    font-size: 63px;
+    line-height: 74px;
+    font-weight: 700;
+
+}
+.orderBorder{
+    border: 1px solid black;
+    width: 390px;
+    height: 56px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.homeflex{
+    margin: 20px 0px 0px 50px;
+    
+}
+.yatagsekili {
+    width: 904px;
+    height: 703px;
+}
+.homestardiv{
+    max-width: 95%;
+
+}
+
+#HomesecondPageFirstImg{
+    width: 600px;
+    height: 300px;
+}
+.secondHomediv{
+    max-width: 95%;
+    height: 900px ;
+     margin: 20px 0px 0px 20px;
+     
+}
+.secondHomePageImg{
+    
+    width: 400px;
+    height: 300px;
+}
+.secondHomePageImg img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.firstpngHomSecond img{
+    width: 550px;
+    height: 662px;
+   
+
+}
+#seconddivH1{
+    margin: 20px 0px 20px 30px;
+}
+.HomeThreitPage{
+    max-width: 95%;
+    height: 700px;
+    margin: 20px 0px 0px 30px;
+}
+.HomefourPage{
+    max-width: 95%;
+    margin: 20px 0px 0px 30px;
+}
+.HomePagefive{
+   
+    max-width: 95%;
+    height: 400px;
+    margin: auto;
+     margin: 20px 0px 0px 30px;
+}
+.singupButton{
+    border: 1px solid black;
+    width: 123px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+}

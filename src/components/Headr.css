@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+}
+.basliq{
+    width: 100%;
+    height: 32px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.menuborder{
+    border: 1px solid black;
+    width: 120px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+#boz{
+     background-color: #D3D3D3;
+}
+.startInfo{
+    margin: 20px 0px 0px 50px;
+    gap: 90px;
+}
+.startnav{
+    margin: 20px 0px 0px 50px;
+    
+}
+.layotcircile{
+    border: 1px solid #38CB89;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: #38CB89;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navtoplayici{
+    max-width: 95%;
+}
