@@ -40,7 +40,7 @@ const Header = () => {
             <Link to={"/"}><img src={logoone} style={{ width: "120px", height: "32px" }} /></Link>
           </div>
           <nav>
-            <Flex gap={"medium"}>
+            <Flex gap={"medium"} className="navbarFlex">
               <li><Link to={"/home"}>Home</Link></li>
               <li><Link to={"/shop"}>Shop</Link></li>
               <li><Link to={"/product"}>Product</Link></li>
@@ -48,7 +48,7 @@ const Header = () => {
             </Flex>
           </nav>
           <div className="Layoutfotos">
-            <Flex gap={"large"}>
+            <Flex gap={"large"} className="layoutsFotoFirstFlex">
               <img src={vector} alt="Lupa" />
               <img src={usercircle} alt="singin" />
               <div>

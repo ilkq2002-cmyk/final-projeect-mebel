@@ -1,6 +1,6 @@
 .FOOter{
     width: 100%;
-    height: 249px;
+    height: 649px;
     background-color: black;
     color: white;
 }
@@ -9,4 +9,33 @@
     margin: auto;
     padding: 70px 0px 0px 0px;
 
+}
+.JoinOur{
+    width: 100%;
+    height: 360px;
+    background-color: #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.SingINBut{
+    width: 123px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: black;
+    color: beige;
+}
+.SinginFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 120px;
+}
+.line{
+    width: 600px;
+    height: 1px;
+    background-color:black;
 }

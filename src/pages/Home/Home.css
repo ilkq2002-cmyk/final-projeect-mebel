@@ -1,16 +1,39 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
-.homeh1{
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.homeh1 {
     font-size: 63px;
     line-height: 74px;
     font-weight: 700;
 
 }
-.orderBorder{
+
+.orderBorder {
     border: 1px solid black;
     width: 390px;
     height: 56px;
@@ -22,70 +45,252 @@
     justify-content: center;
 
 }
-.homeflex{
+
+.homeflex {
     margin: 20px 0px 0px 50px;
-    
+
 }
+
 .yatagsekili {
     width: 904px;
     height: 703px;
 }
-.homestardiv{
+
+.homestardiv {
     max-width: 95%;
 
 }
 
-#HomesecondPageFirstImg{
+#HomesecondPageFirstImg {
     width: 600px;
     height: 300px;
 }
-.secondHomediv{
+
+.secondHomediv {
     max-width: 95%;
-    height: 900px ;
-     margin: 20px 0px 0px 20px;
-     
+    height: 900px;
+    margin: 20px 0px 0px 20px;
+
 }
-.secondHomePageImg{
-    
+
+.defaltpngnone{
+    width: 700px;
+    height: 424px;
+}
+
+.secondHomePageImg {
+
     width: 400px;
     height: 300px;
 }
-.secondHomePageImg img{
-    
+
+.secondHomePageImg img {
+
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.firstpngHomSecond img{
+
+.firstpngHomSecond img {
     width: 550px;
     height: 662px;
-   
+
 
 }
-#seconddivH1{
+
+#seconddivH1 {
     margin: 20px 0px 20px 30px;
 }
-.HomeThreitPage{
+
+.HomeThreitPage {
     max-width: 95%;
     height: 700px;
     margin: 20px 0px 0px 30px;
 }
-.HomefourPage{
+
+.HomefourPage {
     max-width: 95%;
     margin: 20px 0px 0px 30px;
 }
-.HomePagefive{
-   
+
+.HomePagefive {
+
     max-width: 95%;
     height: 400px;
     margin: auto;
-     margin: 20px 0px 0px 30px;
+    margin: 20px 0px 0px 30px;
 }
-.singupButton{
+
+.singupButton {
     border: 1px solid black;
     width: 123px;
     height: 40px;
     border-radius: 8px;
     background-color: black;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    .homeh1 {
+        font-size: clamp(30px, 7vw, 42px);
+        line-height: 1.08;
+        font-weight: 700;
+        overflow-wrap: break-word;
+    }
+
+    .homeflex {
+        width: auto;
+        margin: 16px;
+        flex-direction: column;
+    }
+
+    .homestardiv {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .yatagsekili {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    .orderBorder {
+        width: 100%;
+        max-width: 100%;
+        min-height: 48px;
+        height: auto;
+        padding: 14px 12px;
+        margin-top: 16px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .secondHomediv {
+        width: auto;
+        max-width: none;
+        height: auto;
+        margin: 32px 16px 0;
+        
+    }
+
+    #HomesecondPageFirstImg {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+
+    .secondHomePageImg {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+    }
+
+    .secondHomePageImg img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #seconddivH1 {
+        margin: 20px 0;
+        font-size: 25px;
+        line-height: 1.15;
+    }
+
+    .firstpngHomSecond {
+        width: 100%;
+        max-width: 100%;
+    }
+    .defaltpngnone{
+        width: 336px;
+        height: 160px;
+
+    }
+
+    .firstpngHomSecond img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* CHAIRS & BENCHES */
+    .HomeThreitPage {
+        width: auto;
+        max-width: none;
+        height: auto;
+        margin: 32px 16px;
+    }
+
+    /* AD MIRE */
+    .HomefourPage {
+        width: auto;
+        max-width: none;
+        height: auto;
+        margin: 32px 16px;
+       
+    }
+    .HomefourPageFlex{
+        flex-direction: column;
+    }
+    .hometherrBogFlex{
+        flex-direction: column;
+    }
+
+
+    /* TURNTABLE COUCH və sonrakı bölmə */
+    .HomePagefive {
+        width: auto;
+        max-width: none;
+        height: auto;
+        margin: 32px 16px;
+    }
+
+    /* Bölmələrin daxilində şəkillərin ekranı aşmasının qarşısı */
+    .HomeThreitPage img,
+    .HomefourPage img,
+    .HomePagefive img,
+    .secondHomediv img {
+        max-width: 100%;
+    }
+
+    /* Bölmələrin daxilində uzun mətnlər */
+    .HomeThreitPage p,
+    .HomefourPage p,
+    .HomePagefive p,
+    .secondHomediv p {
+        overflow-wrap: break-word;
+    }
+
+    /* Qeydiyyat düyməsi */
+    .singupButton {
+        max-width: 100%;
+        min-height: 40px;
+        height: auto;
+        padding: 10px 14px;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    footer img {
+        max-width: 100%;
+        height: auto;
+    }
 }

@@ -14,6 +14,7 @@ import randompage2 from "../../assets/randompage2.jpg";
 import randomfoto1 from "../../assets/randomfoto1.jpg";
 import mektub from "../../assets/mektub.png";
 import "./Home.css";
+import { Link } from "react-router";
 
 const Home = () => {
   return (
@@ -45,9 +46,9 @@ const Home = () => {
         <h1 className="homeh1" id="seconddivH1">
           Novelties
         </h1>
-        <Flex gap={"medium"} justify="center">
+        <Flex gap={"medium"} justify="center" className="homePageSecondFlex">
           <div className="firstpngHomSecond">
-            <img src={defaltfive} alt="" />
+            <img src={defaltfive} alt="" className="NoveltiesFotos" />
             <h1 className="homeh1">Bondt-ROUND</h1>
             <p>Design by merit Fran, Nana,Groner,210</p>
           </div>
@@ -74,7 +75,7 @@ const Home = () => {
         </Flex>
       </div>
       <div className="HomeThreitPage">
-        <Flex gap={"medium"}>
+        <Flex gap={"medium"} className="hometherrBogFlex">
           <Flex gap={"medium"} vertical>
             <Flex gap={"medium"} className="ThreitPageh1p" vertical>
               <h1 className="homeh1">
@@ -88,12 +89,14 @@ const Home = () => {
             </Flex>
             <img src={defaltpngseven} alt="" />
           </Flex>
-          <Flex gap={"medium"} vertical>
+          <Flex gap={"medium"} vertical className="ChairBrench">
             <img src={defaltpngeight} alt="" />
             <Flex gap={"medium"} className="ThreitPageh1p" vertical>
-              <h1 className="homeh1">
-                Chairs & <br /> Benches
-              </h1>
+              <Link to={"/shop"}>
+                <h1 className="homeh1">
+                  Chairs & <br /> Benches
+                </h1>
+              </Link>
               <p>
                 The ensemble of the 1.3 Collection comprises <br />
                 chair, stool and bar stool. The most <br />
@@ -109,8 +112,13 @@ const Home = () => {
         </Flex>
       </div>
       <div className="HomefourPage">
-        <Flex gap={"medium"} align="center" justify="space-between">
-          <img src={defaltpngten} alt="" style={{ width: "700px" , height:"424px" }} />
+        <Flex
+          gap={"medium"}
+          align="center"
+          justify="space-between"
+          className="HomefourPageFlex"
+        >
+          <img src={defaltpngten} alt="" className="defaltpngnone" />
           <Flex gap={"medium"} vertical>
             <h1 className="homeh1">
               TURN TABLE <br /> COUCH
@@ -123,25 +131,31 @@ const Home = () => {
               slim-line middle foot in solid wood
             </p>
           </Flex>
-          <img src={defaltpngnine} alt="" style={{ width: "300px" , height:"424px" }} />
+          <img
+            src={defaltpngnine}
+            alt=""
+            style={{ width: "300px", height: "424px" }}
+          />
         </Flex>
       </div>
       <div className="HomePagefive">
         <Flex gap={"medium"} justify="space-between">
           <img src={randomfoto1} alt="" />
           <Flex gap={"medium"} vertical justify="center" align="center">
-            <h1 >Join OUR NEWSLETTER</h1>
+            <h1>Join OUR NEWSLETTER</h1>
             <p>sing up for deals ,new products and promotions</p>
-            <Flex gap={"medium"} justify="center"
-            align="center">
-              <img src={mektub} alt="" style={{width:"24px",height:"24px"}} />
+            <Flex gap={"medium"} justify="center" align="center">
+              <img
+                src={mektub}
+                alt=""
+                style={{ width: "24px", height: "24px" }}
+              />
               <p>Email address</p>
               <button className="singupButton">Sing Up</button>
             </Flex>
           </Flex>
           <img src={randompage2} alt="" />
         </Flex>
-
       </div>
     </>
   );

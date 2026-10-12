@@ -7,6 +7,7 @@ import Layout from "./components/Layout";
 import Shop from "./pages/Shop/Shop";
 import Product from "./pages/Products/Product";
 import Contacus from "./pages/Contacus/Contacus";
+import Blog from "./pages/Blog/Blog";
 
 const router = createBrowserRouter([
   {
@@ -23,9 +24,19 @@ const router = createBrowserRouter([
         Component:Shop
       },
       {
+        path:"/ChairsBenches",
+        Component:Shop
+
+      },
+      {
         path:"/product",
         Component:Product
       },
+      {
+        path:"/blog",
+        Component:Blog
+      },
+
       {
         path:"/contactus",
         Component:Contacus

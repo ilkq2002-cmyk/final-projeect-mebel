@@ -1,0 +1,71 @@
+.product-image {
+    width: 324px;
+    height: 276px;
+    object-fit: cover;
+}
+
+.ChairBenches {
+    margin: 0px 0px 40px 40px;
+}
+
+.ChairsBenchesBigFoto {
+    width: 680px;
+    height: 748px;
+}
+
+.products-second img {
+    width: 330px;
+    height: 350px;
+}
+
+.bottomSection {
+    margin: 40px 0px 0px 40px;
+}
+
+.defaultTenFoto {
+    width: 700px;
+}
+
+.turntableCouch {
+    margin: 70px 0px 0px 0px;
+}
+
+.TuruntableH1p {
+    text-align: right;
+}
+
+@media (max-width:768px) {
+    .bottomSection {
+        flex-direction: column;
+    }
+
+    .products-second {
+        margin: 0px 0px 0px -40px;
+    }
+
+    .products-second img {
+        width: 320px;
+        height: 350px;
+    }
+
+    .defaultTenFoto {
+        width: 670px;
+    }
+    .defaultnineFoto {
+        width: 670px;
+    }
+
+    .turntableCouch {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .TuruntableH1p{
+        text-align: start;
+    
+    }
+
+}
